@@ -1,0 +1,149 @@
+/* * {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #eee;
+}
+
+header {
+  background: #1e1e1e;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.project-card {
+  background: #1f1f1f;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd57;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeInUp 0.8s ease;
+}
+
+h2 {
+  color: #ffdd57;
+  font-size: 2rem;
+  border-bottom: 2px solid #ffdd57;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.project-card {
+  background: #262626;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid #00d4ff;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  border-left-color: #ff3cac;
+}
+
+.project-card h3 {
+  color: #00d4ff;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #121212;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
